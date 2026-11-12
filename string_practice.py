@@ -23,7 +23,7 @@ print(phrase[len(phrase)-1])
 # \" = quote
 # \' = apostrophe
 
-wish = "  My first class starts at: \t 11am"
+wish = " My first class starts at: \t 11am"
 lunch_main = "Steak"
 lunch_side = "Fries"
 lunch_drink = "Water"
@@ -75,3 +75,14 @@ def strip_list(list_items):
     return list_items
 
 print(strip_list(lunch_list))
+
+#Slicing is to get substrings or subsequences 
+#String_var[start : stop : skip]
+#start is inclusive, stop is exclusive and skip is how many steps to take
+
+print(wish[2:6])    #start at index 2 and end at index 5
+print(wish[:6])     #start at index 0 and end at index 5
+print(wish[3:])     #start at index 3 and finish
+print(wish[:8:3])   #write every 3rd character from index 0-7
+
+print(wish[::-1])   # prints in reverse
